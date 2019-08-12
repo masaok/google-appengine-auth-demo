@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel= "stylesheet"
+      href = "/styles/addcourses.css">
+    <link rel="icon" href="/media/studyFavicon.png">
+  </head>
+  <body>
+    <header id="title">Study Spot</header>
+
+    {% block body %}{% endblock %}
+    <footer>FOOTER
+      <div id="email_signout">
+        {% if nickname %}
+          {{ nickname }} •
+        {% endif %}
+        <a id="auth" href="{{ auth_url }}">{{ auth_text }}</a>
+      </div>
+    </footer>
+  </body>
+</html>

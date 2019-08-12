@@ -10,6 +10,8 @@ from google.appengine.ext import ndb
 
 from data import Course, Teacher, User, Post, Enrollment
 
+from content_manager import populate_feed, logout_url, login_url
+
 from pprint import pprint, pformat
 
 jinja_env = jinja2.Environment(
